@@ -321,9 +321,9 @@ def benchmark(ctx, screen_width=600, screen_height=600, editor_mode=False, out='
     # Bedrooms:       FloorPlan301 - FloorPlan330
     # Bathrooms:      FloorPLan401 - FloorPlan430
 
-    # room_ranges = [(1, 30), (201, 230), (301, 330),  (401, 430)]
+    room_ranges = [(1, 30), (201, 230), (301, 330),  (401, 430)]
 
-    room_ranges = [(1, 30)]
+    #room_ranges = [(1, 30)]
 
     benchmark_map = {'scenes': {}}
     total_average_ft = 0
