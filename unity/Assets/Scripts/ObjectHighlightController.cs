@@ -212,6 +212,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
                 if (simObj != null && validObjectLazy())
                 {
                     var withinReach = PhysicsController.FindObjectInVisibleSimObjPhysics(simObj.uniqueID) != null;
+                    // Debug.Log("Within reach " + withinReach);
                     setTargetText(simObj.name, withinReach);
                     newHighlightedObject = simObj;
                     var mRenderer = newHighlightedObject.GetComponentInChildren<MeshRenderer>();

@@ -104,7 +104,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		// Vector3 m_OriginalCameraPosition;
 
 
-		public float maxVisibleDistance = 1.5f; //changed from 1.0f to account for objects randomly spawned far away on tables/countertops, which would be not visible at 1.0f
+		public float maxVisibleDistance  = 60.5f; //changed from 1.0f to account for objects randomly spawned far away on tables/countertops, which would be not visible at 1.0f
 
 		// initial states
 		protected Vector3 init_position;
@@ -147,8 +147,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_CharacterController.radius = 0.2f;
 			// using default for now to remain consistent with generated points
 			//m_CharacterController.height = LoadFloatVariable (height, "AGENT_HEIGHT");
-			this.m_WalkSpeed = 2;
-			this.m_RunSpeed = 10;
+			this.m_WalkSpeed = 8;
+			this.m_RunSpeed = 40;
 			this.m_GravityMultiplier = 2;
 			//this.m_UseFovKick = true;
 			//this.m_StepInterval = 5;
