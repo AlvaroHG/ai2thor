@@ -393,6 +393,7 @@ class Controller(object):
             scene='FloorPlan_Train1_1',
             image_dir='.',
             save_image_per_frame=False,
+            docker_enabled=False,
             depth_format=DepthFormat.Meters,
             add_depth_noise=False,
             **unity_initialization_parameters):
@@ -401,7 +402,7 @@ class Controller(object):
         self.receptacle_nearest_pivot_points = {}
         self.server = None
         self.unity_pid = None
-        self.docker_enabled = False
+        self.docker_enabled = docker_enabled
         self.container_id = None
         self.local_executable_path = local_executable_path
         self.last_event = None
